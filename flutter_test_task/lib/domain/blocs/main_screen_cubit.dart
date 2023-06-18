@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_test_task/domian/api_client/deal_client.dart';
-import 'package:flutter_test_task/domian/entity/deal.dart';
+import 'package:flutter_test_task/domain/api_client/deal_client.dart';
+import 'package:flutter_test_task/domain/entity/deal.dart';
 
 class MainScreenState {
   List<Deal> _listDeal = [];

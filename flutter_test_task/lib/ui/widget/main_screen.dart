@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_test_task/domian/blocs/main_screen_cubit.dart';
-import 'package:flutter_test_task/domian/entity/deal.dart';
+import 'package:flutter_test_task/domain/blocs/main_screen_cubit.dart';
+import 'package:flutter_test_task/domain/entity/deal.dart';
 
 class MainScreenWidget extends StatefulWidget {
   const MainScreenWidget({super.key});
@@ -60,7 +60,7 @@ class DealElementWidget extends StatelessWidget {
         children: [
           RichText(
             text: TextSpan(
-                text: "#${id.toString()} ", children: [TextSpan(text: status)]),
+                text: "#${id.toString()} ",style: const TextStyle(color: Colors.black), children: [TextSpan(text: status)]),
           ),
           Text(name),
           Text(type),

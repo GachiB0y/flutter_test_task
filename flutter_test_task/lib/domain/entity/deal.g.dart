@@ -8,16 +8,14 @@ part of 'deal.dart';
 
 Deal _$DealFromJson(Map<String, dynamic> json) => Deal(
       offerId: json['OFFER_ID'] as int,
-      offerFristResponsible: json['OFFER_FIRST_RESPONSIBLE'] as String,
-      segmentName: json['SEGMENT_NAME'] as String,
+      contactTitle: json['CONTACT_TITLE'] as String,
       statusName: json['STATUS_NAME'] as String,
       offerSum: json['OFFER_SUM'] as String,
     );
 
 Map<String, dynamic> _$DealToJson(Deal instance) => <String, dynamic>{
       'OFFER_ID': instance.offerId,
-      'OFFER_FIRST_RESPONSIBLE': instance.offerFristResponsible,
-      'SEGMENT_NAME': instance.segmentName,
+      'CONTACT_TITLE': instance.contactTitle,
       'STATUS_NAME': instance.statusName,
       'OFFER_SUM': instance.offerSum,
     };

@@ -50,10 +50,9 @@ class DealElementWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = listDeal[index].offerFristResponsible;
+    final name = listDeal[index].contactTitle;
     final id = listDeal[index].offerId;
     final status = listDeal[index].statusName;
-    final type = listDeal[index].segmentName;
     final sum = listDeal[index].offerSum;
     return Card(
       child: Column(
@@ -63,7 +62,6 @@ class DealElementWidget extends StatelessWidget {
                 text: "#${id.toString()} ",style: const TextStyle(color: Colors.black), children: [TextSpan(text: status)]),
           ),
           Text(name),
-          Text(type),
           Text(sum),
         ],
       ),

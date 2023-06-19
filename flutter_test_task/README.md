@@ -1,5 +1,7 @@
 # flutter_test_task
 
+![til](./assets/example_gif.gif)
+
 A new Flutter project.
 
 ## Getting Started
